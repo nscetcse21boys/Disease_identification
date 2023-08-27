@@ -4,9 +4,14 @@
 }
 
 .nav {
+    margin: 10PX;
     overflow: hidden;
-    padding: 50px;
-  }
+    padding: 20px;
+    border-radius: 20px;
+    /* padding: 20px; */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
   
 .nav a{
     float: left;

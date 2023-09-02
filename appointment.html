@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./appointment.css">
+</head>
+<body>
+    <!--appointment-->
+    <form>
+        <label for="name">First-Name:</label>
+        <input type="text" id="name" name="firstname" required>
+        <label for="name">Last-Name:</label>
+        <input type="text" id="name" name="lastname"><br>
+        <label for="ph">Phone Number:</label>
+        <input type="tel" id="ph" name="phoneNumber" required>
+        <label for="date">Date:</label>
+        <input type="date" id="name" name="date" required><br>
+        <label for="category">Category:</label>
+            <select name="category" id="category">
+                <option value="."></option>
+                <option value="Cancer">Cancer</option>
+                <option value="Corona">Corona</option>
+                <option value="Dengu">Dengu</option>
+                <option value="Virus">Virus</option>
+            </select>
+            <div class="text">
+            <div id="cancer">
+                <h1>Doctor name: naruto</h1>
+                <h3>Appoint-Time: 02:15 PM</h3><br>
+                <a href="#">Appoint</a>
+            </div>
+            <div id="corona">
+                <h1>Doctor name: sasuke</h1>
+                <h3>Appoint-Time: 04:15 PM</h3><br>
+                <a href="#">Appoint</a>
+            </div>
+            </div>
+    </form>
+    <script>
+       const selectElement = document.getElementById("category");
+const popupElement = document.getElementById("cancer");
+const popupElement1 = document.getElementById("corona");
+
+selectElement.addEventListener("change", function() {
+    if (selectElement.value == "Cancer") {
+    popupElement.style.display = "block";
+    popupElement1.style.display = "none";  
+        }
+    else if(selectElement.value == "Corona"){
+    popupElement1.style.display = "block"; 
+    popupElement.style.display = "none"; 
+        }
+    else if(selectElement.value == "Dengu"){
+    popupElement1.style.display = "block"; 
+    popupElement.style.display = "block"; 
+        }
+    else {
+    popupElement.style.display = "none";
+        }
+});
+    </script>
+</body>
+</html>

@@ -18,13 +18,136 @@
         </div>
       </div>
       <!--header-->
-      <div class="header">
-        <img src="./img/doctor.png" alt="doctor-picture">
-        <div class="text-content">
-        <h1> SAMPLE HEADING</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque et est, libero illum reiciendis quidem ipsa. Odit excepturi qui commodi placeat velit nesciunt dolor. Molestiae quibusdam exercitationem autem omnis maiores.</p>
+      <div class="head"></div>
+    
+    <div class="head-t">
+        <h1>Sample Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias a voluptas laboriosam, minima ad earum? Cum magnam sint corrupti labore ipsum nulla sed animi dolor blanditiis, perferendis qui perspiciatis aliquid?</p>
+        <div class="btn">
         <button>Explore</button>
         </div>
+    </div>
+      <!--pic & text-->
+      <div id="det">
+      <div class="details">
+        <img src="./img/details.jpg">
+        <div class="text">
+          <h1>Heading Heading</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit quas expedita enim quia illum voluptas sunt possimus debitis praesentium quam, aperiam maiores facilis soluta quo saepe nostrum natus magni.</p>
+        </div>
       </div>
+      <div class="details1">
+        <img src="./img/details.jpg">
+        <div class="text1">
+          <h1>Heading Heading</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit quas expedita enim quia illum voluptas sunt possimus debitis praesentium quam, aperiam maiores facilis soluta quo saepe nostrum natus magni.</p>
+        </div>
+      </div>
+      <div class="details2">
+        <img src="./img/details.jpg">
+        <div class="text2">
+          <h1>Heading Heading</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit quas expedita enim quia illum voluptas sunt possimus debitis praesentium quam, aperiam maiores facilis soluta quo saepe nostrum natus magni.</p>
+        </div>
+      </div>
+      </div>
+      <button id="button1"><span id="sm1">Show more</span></button>
+      <!--card-->
+      
+      <div id="card">
+        <!--row 1-->
+          <div class="box" style="--clr: #009688">
+            <div class="img-box">
+              <img src="./img/details.jpg">
+            </div>
+            <div class="content"><h2>sample heading </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+            </div>
+          </div>
+          <div class="box" style="--clr: #009688">
+            <div class="img-box">
+              <img src="./img/details.jpg">
+            </div>
+            <div class="content"><h2>sample heading </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+            </div>
+          </div>
+          <div class="box" style="--clr: #009688">
+            <div class="img-box">
+              <img src="./img/details.jpg">
+            </div>
+            <div class="content"><h2>sample heading </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+            </div>
+          </div>
+          <!--row2-->
+          <div class="box" style="--clr: #009688">
+            <div class="img-box">
+              <img src="./img/details.jpg">
+            </div>
+            <div class="content"><h2>sample heading </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+            </div>
+          </div>
+          <div class="box" style="--clr: #009688">
+            <div class="img-box">
+              <img src="./img/details.jpg">
+            </div>
+            <div class="content"><h2>sample heading </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+            </div>
+          </div>
+          <div class="box" style="--clr: #009688">
+            <div class="img-box">
+              <img src="./img/details.jpg">
+            </div>
+            <div class="content"><h2>sample heading </h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+            </div>
+          </div>
+      </div>
+      <button id="button"><span id="sm">Show more</span></button>
+
+<!--quotes-->
+
+      <div class="quotes">
+        <img src="./img/details.jpg">
+        <div class="greenbg"></div>
+        <div class="qt">
+          <h1>athan da ithan da arunachalam naan taan da.</h1>
+          <P>- Tomioka Giyu</P>
+        </div>
+      </div>
+<!--footer-->
+
+<script>
+var view1=document.getElementById("det");
+var button1=document.getElementById("button1");
+var text1=document.getElementById("sm1");
+button1.onclick=function(){
+    if(view1.className=="open"){
+        view1.className="close";
+        text1.innerHTML="Show More";
+    }
+    else{
+        view1.className="open";
+        text1.innerHTML="Show Less";
+    }
+};
+
+var view=document.getElementById("card");
+var button=document.getElementById("button");
+var text=document.getElementById("sm");
+button.onclick=function(){
+    if(view.className=="open"){
+        view.className="close";
+        text.innerHTML="Show More";
+    }
+    else{
+        view.className="open";
+        text.innerHTML="Show Less";
+    }
+};
+</script>
 </body>
 </html>

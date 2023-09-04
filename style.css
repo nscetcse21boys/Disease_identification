@@ -2,21 +2,19 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-image: linear-gradient(45deg, #00B09B #96c93d);
+}
 
 .nav {
     margin: 10PX;
     overflow: hidden;
-<<<<<<< HEAD
-    padding: 30px;
-  }
-=======
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-    /* padding: 20px; */
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 11px 2px 2px rgba(0, 0, 0, 0.1);
 }
->>>>>>> dc925756b174a0648949199c8ef81b4b3d140224
+
   
 .nav a{
     float: left;
@@ -35,6 +33,9 @@
     border: 2px solid green;
     border-radius: 5px;
 }  
+.mi a{
+    border-radius: 5px;
+}  
 .su a{
     color: white;
     background-color: green;
@@ -47,7 +48,10 @@
     background-size: cover;
     background-position: bottom;
     height: 70vh; 
+    border-radius: 20px;
+    margin: 20px;
 }
+
 .head::after{
     content: '';
     position: absolute;
@@ -56,6 +60,8 @@
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,0.55);
+    border-radius: 20px;
+    box-shadow: 10px 10px 1px rgb(0,0,0,0.1);
 }
 .head-t{
     position: absolute;
@@ -105,8 +111,8 @@
     height: 38vh;
 }
 .details img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     border-radius: 5px;
     left: 10vw;
@@ -128,8 +134,8 @@
     padding-bottom: 20px;
 }
 .details1 img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     border-radius: 5px;
     right: 10vw;
@@ -142,8 +148,8 @@
     width: 600px;
 }
 .details2 img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     border-radius: 5px;
     left: 10vw;
@@ -182,7 +188,7 @@
     max-width: 100%;
     height: 300px;
     margin-right: 50px;
-    background: rgb(0, 88, 0);
+    background: rgb(74 209 74);
     border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

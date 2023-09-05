@@ -376,12 +376,12 @@ body{
     }
     /*details*/
     #det{
-        max-height: 90vh;
+        max-height: 100vh;
         overflow: hidden;
         transition: 1.1s;
     }
     #det.open{
-        max-height: 1200px;
+        max-height: 150vh;
         transition: 1.1s;
     }
     #button1{
@@ -390,11 +390,8 @@ body{
     }
     .details,.details1,.details2{
         position: relative;
-        padding: 20px;
+        padding: 10vh 0vw 3vh 0vw;
         height: 38vh;
-    }
-    .details1,.details2{
-        padding-bottom: 5vh ;
     }
     .details img,.details1 img,.details2 img{
         width: 175px;
@@ -470,7 +467,7 @@ body{
     }
     #card .box .content p {
         color: #d4d4d4;
-        font-size: 13px;
+        font-size: 10px;
         margin-top: 5px;
     }
     #button{
@@ -489,12 +486,14 @@ body{
         height: 200px;
     }
     .quotes .greenbg{
+        margin-top: 3vh;
         padding: 0px ;
         height: 21.5vh;
         width: 100vw;
         top: 25vh;
     }
     .quotes .qt{
+        margin-top: 3vh;
         top: 26vh;
         right: 3vw;
         padding: 20px;

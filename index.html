@@ -18,9 +18,19 @@
           <span class="mi"><a href="#">Disease</a></span>
           <span class="mi"><a href="#">Chat</a></span>
           <span class="mi"> <a href="#">About</a></span>
-          
-         
         </div>
+      </div>
+      <!--sidenav-->
+      <div class="mobNav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Disease</a><hr>
+        <a href="#">Client</a><hr>
+        <a href="#">About</a><hr>
+        <span  class="si"><a href="#">SignIn</a></span>
+        <span class="su"><a href="#">SignUp</a></span>
+      </div>
+      <span style="font-size: 30px;padding: 10px;" onclick="openNav()">&#9776; <span  style="font-size:30px;margin-left:5px;color: rgb(0,88,0);font-weight: bold;">I-Detect</span></span>
       </div>
       <!--header-->
       <div class="head"></div>
@@ -127,6 +137,15 @@
 <!--footer-->
 
 <script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
 var view1=document.getElementById("det");
 var button1=document.getElementById("button1");
 var text1=document.getElementById("sm1");

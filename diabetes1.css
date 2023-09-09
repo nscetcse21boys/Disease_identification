@@ -138,3 +138,14 @@ html, body {
 .valid-feedback{
    color: #2acc80;
 }
+@media only screen and (max-width:728px){
+    .form content{
+        padding: 0;
+    }
+    .form-content .form-items {
+        padding: 10px 30px 10px 30px;
+        width: 90vw;
+        min-width: 80vw;
+        margin-left: 14vw;
+    }
+}

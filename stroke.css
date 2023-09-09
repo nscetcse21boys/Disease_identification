@@ -192,3 +192,16 @@ label:first-child {
             transform: rotateX(0deg);
   }
 }
+
+@media only screen and (max-width:728px){
+  .modal-header {
+    margin-top: 20vh;
+    width: 85vw;
+    margin-left: 7vw;
+  }
+  .modal-body {
+    margin-left: 7vw;
+    padding: 20px 50px;
+    width: 85vw;
+  }
+}

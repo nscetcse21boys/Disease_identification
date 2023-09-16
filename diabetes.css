@@ -29,14 +29,14 @@ body {
     box-shadow: 3px 3px 11px 1.5px #0000002b;
     font-family: Poppins;
     padding: 10px;
-    height: 575px;
+    height: 595px;
 
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
 h1 {
-    padding: 20px;
+    padding: 10px 20px 5px 20px;
     color:white;
     font-size: 2.1rem;
     font-weight: 800;
@@ -45,8 +45,9 @@ h1 {
 
 .ImgContainer {
     overflow: hidden;
+    height: 570px;
     border-radius: 10px;
-  background:url("./img/stroke2.jpg");
+  background:url("./img/diabetes1.jpg");
   background-size:100% 100%;
 }
 
@@ -103,9 +104,11 @@ form select:hover {
 
 form .secondrow {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 100% 65%;
 }
-
+form .fourthrow input{
+    width: 100%;
+}
 form select {
     width: 100%;
 }
